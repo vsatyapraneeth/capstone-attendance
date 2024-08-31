@@ -17,14 +17,12 @@ const Homepage = () => {
                         <StyledTitle>
                             Welcome to
                             <br />
-                            School Management
+                            Attendance Management
                             <br />
                             System
                         </StyledTitle>
                         <StyledText>
-                            Streamline school management, class organization, and add students and faculty.
-                            Seamlessly track attendance, assess performance, and provide feedback.
-                            Access records, view marks, and communicate effortlessly.
+                        Efficiently track and manage student attendance with real-time updates and detailed reports. Streamline administrative tasks while ensuring accurate record-keeping.
                         </StyledText>
                         <StyledBox>
                             <StyledLink to="/choose">
@@ -33,11 +31,11 @@ const Homepage = () => {
                                 </LightPurpleButton>
                             </StyledLink>
                             <StyledLink to="/chooseasguest">
-                                <Button variant="outlined" fullWidth
+                                {/* <Button variant="outlined" fullWidth
                                     sx={{ mt: 2, mb: 3, color: "#7f56da", borderColor: "#7f56da" }}
                                 >
                                     Login as Guest
-                                </Button>
+                                </Button> */}
                             </StyledLink>
                             <StyledText>
                                 Don't have an account?{' '}

@@ -72,22 +72,22 @@ const StudentProfile = () => {
               </Grid>
               <Grid item xs={12} sm={6}>
                 <Typography variant="subtitle1" component="p">
-                  <strong>Email:</strong> john.doe@example.com
+                  <strong>Email:</strong> praneeth@example.com
                 </Typography>
               </Grid>
               <Grid item xs={12} sm={6}>
                 <Typography variant="subtitle1" component="p">
-                  <strong>Phone:</strong> (123) 456-7890
+                  <strong>Phone:</strong> 9000900012
                 </Typography>
               </Grid>
               <Grid item xs={12} sm={6}>
                 <Typography variant="subtitle1" component="p">
-                  <strong>Address:</strong> 123 Main Street, City, Country
+                  <strong>Address:</strong> 6664, Bangalore, Karnataka
                 </Typography>
               </Grid>
               <Grid item xs={12} sm={6}>
                 <Typography variant="subtitle1" component="p">
-                  <strong>Emergency Contact:</strong> (987) 654-3210
+                  <strong>Emergency Contact:</strong> 9000900012
                 </Typography>
               </Grid>
             </Grid>

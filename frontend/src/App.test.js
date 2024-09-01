@@ -1,0 +1,33 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.getByText('AdminLogin as an').click();
+  await page.getByLabel('Enter your email *').fill('praneeth@gmail.com');
+  await page.getByLabel('Password *').click();
+  await page.getByLabel('Password *').fill('123321');
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.getByRole('link', { name: 'Logout' }).click();
+  await page.getByRole('button', { name: 'Log Out' }).click();
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.locator('div').filter({ hasText: /^StudentLogin as a student to explore course and attendance\.$/ }).nth(1).click();
+  await page.getByLabel('Enter your Roll Number *').click();
+  await page.getByLabel('Enter your Roll Number *').fill('2');
+  await page.getByLabel('Enter your name *').click();
+  await page.getByLabel('Enter your name *').fill('Thanmai');
+  await page.getByLabel('Password *').click();
+  await page.getByLabel('Password *').fill('1234');
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.getByRole('link', { name: 'Logout' }).click();
+  await page.getByRole('button', { name: 'Log Out' }).click();
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.locator('div').filter({ hasText: /^TeacherLogin as a teacher to post attendance, and track student progress\.$/ }).nth(1).click();
+  await page.getByLabel('Enter your email *').click();
+  await page.getByLabel('Enter your email *').fill('naveen@gmail.com');
+  await page.getByLabel('Password *').click();
+  await page.getByLabel('Password *').fill('1234');
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.getByRole('link', { name: 'Logout' }).click();
+  await page.getByRole('button', { name: 'Log Out' }).click();
+});
